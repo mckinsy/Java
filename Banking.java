@@ -100,16 +100,6 @@ public class Banking
 //		Banking c = new Banking("RAJU",2,1234,true,9456745645L);
 //		Banking c2 = new Banking("shyam",2,1245,false,9456745645L);  //test cases in object form
 //		Banking c3 = new Banking("pawan",4,124565,true,9456745645L);
-		
-		
-		//listen carefully understanding level increase, body language and expressions natural and attractive , no debate with no proper knowledge i'm not god who know ultimate truth what is right or wrong
-//		c.deposit(1234,40000);  // make one more feature for setting distinct pin and distinct phone number and also name if you do                             //that using array it will take time using sql will save lot of time also requires concept of frameworks and jdbc
-//		c.withdraw(35765,1234);
-//		c2.deposit(1245,65000);
-//		c2.withdraw(52647,1245);
-//		c2.checkbalance(1245);
-//		c3.deposit(1234,89000);
-//		c3.withdraw(1234,90000);
 	}
 
 }
