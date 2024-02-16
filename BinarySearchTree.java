@@ -16,13 +16,11 @@ public class BinarySearchTree //hetero.
 
 	static void insert(Node root,int data)
 	{
-//		System.out.println("root.data-->"+root.data);
 		if(data<root.data)
 		{
 			if(root.leftAdd==null)
 			{
 				root.leftAdd=new Node(data);
-//				System.out.println(root.data+"-->root.data");
 				System.out.println(data+" had been added towards left of "+root.data);
 			}
 			else
@@ -87,15 +85,6 @@ public class BinarySearchTree //hetero.
 		System.out.print("post Order -> ");
 		postOrderTraversal(root);
 	}
-
-//	public void df(short x) {
-//		switch (x)
-//		{
-//		default: System.out.println("hello");
-//
-//		}
-//x-> short long double float byte char
-//	}
 }
 
 
