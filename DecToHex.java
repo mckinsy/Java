@@ -3,7 +3,7 @@ package numbers;
 import java.util.HashSet;
 
 import arrays.Beautify;
-import numbers.Generator.PermutationUnderflowException;
+import numbers.Generator.PermutationUnderflowException; //created custom exception
 
 public class DecToHex 
 {  // 0 1 2 3 4 5 6 7 8 9 A B C D E F
