@@ -1,11 +1,9 @@
 package dataStructures;
 
-import dataStructures.BinarySearchTree.Node;
-
 public class BinarySearchTree //hetero.
 {
 	static Node root;//root is dynamic pointer checks current node is root or leaf it does not mean parent
-	static class Node
+	 static class Node
 	{
 		int data;
 		Node leftAdd; //child linkage and parent detection
@@ -18,11 +16,13 @@ public class BinarySearchTree //hetero.
 
 	static void insert(Node root,int data)
 	{
+//		System.out.println("root.data-->"+root.data);
 		if(data<root.data)
 		{
 			if(root.leftAdd==null)
 			{
 				root.leftAdd=new Node(data);
+//				System.out.println(root.data+"-->root.data");
 				System.out.println(data+" had been added towards left of "+root.data);
 			}
 			else
@@ -47,25 +47,56 @@ public class BinarySearchTree //hetero.
 	
 	public static void inOrderTraversal(Node root)
 	{
-		if(root!=null)
-			System.out.println(root.data
-					);
+		if(root==null)
+			return;
+		inOrderTraversal(root.leftAdd);
+		System.out.print(root.data+" ");
+		inOrderTraversal(root.rightAdd);
+	}
+	public static void preOrderTraversal(Node root)
+	{
+		if(root==null)
+			return;
+		System.out.print(root.data+" ");
+		preOrderTraversal(root.leftAdd);
+		preOrderTraversal(root.rightAdd);
+	}
+	public static void postOrderTraversal(Node root)
+	{
+		if(root==null)
+			return;
+		postOrderTraversal(root.leftAdd);
+		postOrderTraversal(root.rightAdd);
+		System.out.print(root.data+" ");
 	}
 
 	public static void main(String[] args) {
 		Node root=new Node(50);
 		insert(root,10);
 		insert(root,20);
+		insert(root,15);
 		insert(root,40);
 		insert(root,3);
 		insert(root,40);
-		
-		
-		
+		System.out.print("In Order -> ");
+		inOrderTraversal(root);
+		System.out.println();
+		System.out.print("pre Order -> ");
+		preOrderTraversal(root);
+		System.out.println();
+		System.out.print("post Order -> ");
+		postOrderTraversal(root);
 	}
 
+//	public void df(short x) {
+//		switch (x)
+//		{
+//		default: System.out.println("hello");
+//
+//		}
+//x-> short long double float byte char
+//	}
 }
-
 
 
 
