@@ -50,22 +50,6 @@ class Result {
             }
         }
         return ans;
-         
-         
-         
-        //  long count=0;
-        //  for(int i=0;i<arr.size();i++)
-        //  {
-        //      for(int j=i;j<arr.size();j++)
-        //      {
-        //          int a=arr.get(i)&arr.get(j);
-        //          if((a&(a-1))==0 | a==1)
-        //          {
-        //              count++;
-        //          }
-        //      }
-        //  }
-        // return count;
     }
 
 }
