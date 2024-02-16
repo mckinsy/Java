@@ -26,24 +26,17 @@ public class DecToHex
 			if(rem==14)
 				rem='E';
 			if(rem==15)
-				rem='F';
-			//System.out.println("rem "+rem);
-			hex =(rem>='A'&&rem<='F')? (char)rem+hex : rem+hex;
-			//System.out.println("hex "+hex);
-			n=n/16;
-			//System.out.println("n "+n);
+				rem='F';			
+			hex =(rem>='A'&&rem<='F')? (char)rem+hex : rem+hex;		
+			n=n/16;			
 		}
-		//System.out.println(hex);
-		//System.out.println(0xd);
 		return hex;
 	}
 
 	public static void main(String[] args) throws PermutationUnderflowException 
 	{
-		//StressTesting.testNum(3,4,"dectoHex");
+		
 		int[] decimal=Generator.exactUnique(4,4);
-//		HashSet<Integer> otp=Generator.exactUnique(4,4); //stress testing
-//		Beautify.display(otp);
 		for(int element:decimal)
 		{
 			System.out.print(element+" -> ");
